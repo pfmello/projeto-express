@@ -8,23 +8,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <script src="scripts/responsive.js" defer></script>
   </head>
   <body>
     <header id="main-header">
-      <div id="logo"><a href="index.html">Eatwell</a></div>
+      <div id="logo"><a href="/">Eatwell</a></div>
       <nav>
         <ul>
           <li class="nav-item">
-            <a href="restaurants.html">Browse Restaurants</a>
+            <a href="/restaurants">Browse Restaurants</a>
           </li>
           <li class="nav-item">
-            <a href="recommend.html">Share a Restaurant</a>
+            <a href="/recommend">Share a Restaurant</a>
           </li>
-          <li class="nav-item"><a href="about.html">About Eatwell</a></li>
+          <li class="nav-item"><a href="/about">About Eatwell</a></li>
         </ul>
       </nav>
       <button id="drawer-btn">
@@ -37,18 +37,28 @@
       <nav>
         <ul>
           <li class="nav-item">
-            <a href="restaurants.html">Browse Restaurants</a>
+            <a href="/restaurants">Browse Restaurants</a>
           </li>
           <li class="nav-item">
-            <a href="recommend.html">Share a Restaurant</a>
+            <a href="/recommend">Share a Restaurant</a>
           </li>
-          <li class="nav-item"><a href="about.html">About Eatwell</a></li>
+          <li class="nav-item"><a href="/about">About Eatwell</a></li>
         </ul>
       </nav>
     </aside>
     <main>
-      <h1>Success!</h1>
-      <p>Your restaurant was successfully added to our list!</p>
+      <h1>Make the world a tastier place!</h1>
+      <p>
+        Share your favorite restaurants or find recommendations of other users!
+      </p>
+      <ul id="actions">
+        <li>
+          <a href="/restaurants">Browse Shared Restaurants</a>
+        </li>
+        <li>
+          <a href="/recommend">Share Your Favorite Restaurant</a>
+        </li>
+      </ul>
     </main>
   </body>
 </html>
