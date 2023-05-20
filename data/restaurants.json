@@ -1,23 +1,9 @@
 [
   {
-    "name": "Penis Longo",
-    "address": "Rio das Ostras",
-    "cuisine": "Comida",
-    "website": "http://bardopaulao.com",
-    "description": "Porque sim caralho"
-  },
-  {
     "name": "Buteco do Pepe",
     "address": "Rio das Ostras",
-    "cuisine": "Comida",
+    "cuisine": "Comida Brasileira",
     "website": "http://botecodopepe.com",
-    "description": "porque eu quero"
-  },
-  {
-    "name": "Buteco do Piru",
-    "address": "Rua do piru",
-    "cuisine": "Comida de penis",
-    "website": "http://botecopiru.com",
-    "description": "Porque é foda"
+    "description": "Porque sim caralho"
   }
 ]

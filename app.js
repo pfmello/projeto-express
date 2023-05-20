@@ -13,6 +13,14 @@ app.use(express.static("public"));
 
 //Middleware para json
 app.use(express.urlencoded({ extended: false }));
+const filePath = path.join(__dirname, "data", "restaurants.json");
+
+function getFileData() {
+  const fileData = fs.readFileSync(filePath);
+  const output = JSON.parse(fileData);
+
+  return output;
+}
 
 app.get("/", (req, res) => {
   // const htmlFilePath = path.join(__dirname, "views", "index.html");
@@ -22,7 +30,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/restaurants", (req, res) => {
-  res.render("restaurants");
+  const storedRestaurants = getFileData();
+  res.render("restaurants", {
+    number: storedRestaurants.length,
+    restaurants: storedRestaurants,
+  });
 });
 
 app.get("/recommend", (req, res) => {
@@ -31,11 +43,7 @@ app.get("/recommend", (req, res) => {
 
 app.post("/recommend", (req, res) => {
   const restaurant = req.body;
-
-  const filePath = path.join(__dirname, "data", "restaurants.json");
-  const fileData = fs.readFileSync(filePath);
-
-  const restaurantes = JSON.parse(fileData);
+  const restaurantes = getFileData();
   restaurantes.push(restaurant);
 
   fs.writeFileSync(filePath, JSON.stringify(restaurantes));
