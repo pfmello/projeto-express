@@ -1,9 +1,1 @@
-[
-  {
-    "name": "Buteco do Pepe",
-    "address": "Rio das Ostras",
-    "cuisine": "Comida Brasileira",
-    "website": "http://botecodopepe.com",
-    "description": "Porque sim caralho"
-  }
-]
+[{"name":"Buteco do Pepe","address":"Rio das Ostras","cuisine":"Comida Brasileira","website":"http://botecodopepe.com","description":"Porque sim caralho"},{"name":"Boteco Jalequini","address":"Rua dos Bebundas","cuisine":"De botequim","website":"http://jalequini.com","description":"Porque é uma bela de uma bosta !"}]

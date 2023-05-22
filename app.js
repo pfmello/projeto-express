@@ -9,6 +9,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 // Checks that for every incoming request, should check if its for a file that can be found on this folder
+//MIDDLEWARE METHOD
 app.use(express.static("public"));
 
 //Middleware para json
